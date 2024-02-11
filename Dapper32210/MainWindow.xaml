@@ -1,0 +1,18 @@
+﻿<Window x:Class="Dapper32210.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Dapper32210"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <DataGrid MouseDoubleClick="myDataGrid_MouseDoubleClick" Name="myDataGrid" Height="300" SelectionChanged="myDataGrid_SelectionChanged"></DataGrid>
+        <StackPanel Orientation="Horizontal">
+            <TextBox Width="200" Name="Name" FontSize="22"></TextBox>
+            <Slider Width="200" VerticalAlignment="Center" Minimum="0" Maximum="100" Name="Score"></Slider>
+            <CheckBox Name="IsStar" FontSize="22" Content="Star"></CheckBox>
+        </StackPanel>
+        <Button FontSize="25" Click="Button_Click">Update Item</Button>
+    </StackPanel>
+</Window>
